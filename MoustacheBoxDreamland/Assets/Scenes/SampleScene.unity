@@ -418,7 +418,7 @@ GameObject:
   - component: {fileID: 81501991}
   - component: {fileID: 81501994}
   m_Layer: 0
-  m_Name: Tilemap2
+  m_Name: PlataformaGrande1.1
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -432,10 +432,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 81501989}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -101.9, y: 0.1, z: 0}
+  m_LocalPosition: {x: -58.7, y: 1.8999999, z: 0}
   m_LocalScale: {x: 1.2727774, y: 1.3495382, z: 1}
   m_Children: []
-  m_Father: {fileID: 111881024}
+  m_Father: {fileID: 837183385}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!19719996 &81501991
@@ -814,7 +814,7 @@ GameObject:
   - component: {fileID: 90174594}
   - component: {fileID: 90174593}
   m_Layer: 0
-  m_Name: Tilemap (6).1
+  m_Name: PlataformaGrande2
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -832,7 +832,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 837183385}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &90174593
 EdgeCollider2D:
@@ -850,23 +850,32 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 183.41531, y: -5.3897734}
-  - {x: 182.10155, y: 2.8702612}
-  - {x: 183.58199, y: 3.307389}
-  - {x: 188.23848, y: 3.1724613}
-  - {x: 190.22076, y: 2.654653}
-  - {x: 193.2376, y: 2.3534768}
+  - {x: 176.67075, y: -8.922646}
+  - {x: 176.53525, y: -0.5495751}
+  - {x: 175.30334, y: 2.0832698}
+  - {x: 176.43762, y: 2.7484882}
+  - {x: 181.51163, y: 2.7865345}
+  - {x: 184.27798, y: 2.472182}
+  - {x: 185.84634, y: 1.9062455}
+  - {x: 188.09927, y: 1.4324462}
+  - {x: 190.98636, y: 1.541044}
+  - {x: 193.65521, y: 1.5878704}
   - {x: 196.17279, y: 2.5458033}
-  - {x: 198.37997, y: 3.0748858}
-  - {x: 200.48386, y: 3.2292922}
-  - {x: 202.4941, y: 3.2969806}
-  - {x: 204.89429, y: 3.2219718}
-  - {x: 206.6588, y: 2.9026465}
+  - {x: 198.65839, y: 2.8660853}
+  - {x: 200.55344, y: 3.0204914}
+  - {x: 202.49408, y: 2.809776}
+  - {x: 204.9639, y: 2.721069}
+  - {x: 206.67252, y: 1.9750097}
   - {x: 205.9918, y: 0.8663564}
   - {x: 205.73106, y: 0.1180504}
   - {x: 205.6517, y: -0.63913906}
-  - {x: 205.50102, y: -7.581763}
-  - {x: 205.31154, y: -28.109009}
+  - {x: 205.4043, y: -2.3483632}
+  - {x: 205.19125, y: -6.378889}
+  - {x: 205.3396, y: -6.378889}
+  - {x: 205.16727, y: -6.8802443}
+  - {x: 205.27853, y: -7.6559296}
+  - {x: 205.04657, y: -8.681856}
+  - {x: 205.10056, y: -29.79657}
 --- !u!483693784 &90174594
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -992,8 +1001,6 @@ Transform:
   m_LocalPosition: {x: 155.2, y: -5.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1168399348}
-  - {fileID: 81501990}
   - {fileID: 837183385}
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -1106,11 +1113,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 289909959}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 2.2, y: -0.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 837183385}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &289909961
 EdgeCollider2D:
@@ -1128,10 +1135,10 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 214.02254, y: -24.582882}
-  - {x: 214.02254, y: 2.911856}
+  - {x: 214.02254, y: -30.284153}
+  - {x: 213.78984, y: 2.9118557}
   - {x: 215.51938, y: 2.9118564}
-  - {x: 215.40916, y: -25.236202}
+  - {x: 215.64186, y: -30.35571}
 --- !u!483693784 &289909962
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -1341,7 +1348,7 @@ GameObject:
   - component: {fileID: 311036548}
   - component: {fileID: 311036547}
   m_Layer: 0
-  m_Name: Tilemap (9)
+  m_Name: PlataformaGrande3.1
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1355,11 +1362,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 311036545}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 10.1, y: -3.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 837183385}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &311036547
 EdgeCollider2D:
@@ -1377,13 +1384,14 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 244.47484, y: -16.038265}
+  - {x: 244.59116, y: -21.855886}
   - {x: 244.15071, y: -8.234866}
-  - {x: 243.52176, y: -4.508198}
+  - {x: 243.4054, y: -5.0899596}
+  - {x: 245.22485, y: -4.4528356}
   - {x: 249.78935, y: -4.371114}
-  - {x: 253.09334, y: -4.2277946}
+  - {x: 255.65308, y: -4.4604974}
   - {x: 253.11232, y: -4.353242}
-  - {x: 253.19456, y: -4.3532414}
+  - {x: 250.6348, y: -4.3532414}
 --- !u!483693784 &311036548
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -1579,11 +1587,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 592314745}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 17.6, y: -3.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 837183385}
-  m_RootOrder: 14
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &592314747
 EdgeCollider2D:
@@ -1601,13 +1609,13 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 271.93567, y: -5.568042}
-  - {x: 269.50757, y: -5.593729}
-  - {x: 269.8179, y: -6.3470306}
-  - {x: 271.89117, y: -5.6884155}
+  - {x: 272.22934, y: -5.494624}
+  - {x: 268.99365, y: -5.5203123}
+  - {x: 269.37738, y: -6.5672865}
+  - {x: 272.25827, y: -5.614997}
   - {x: 271.74838, y: -6.391926}
   - {x: 270.66376, y: -6.957974}
-  - {x: 269.8179, y: -6.43682}
+  - {x: 269.37738, y: -6.5102396}
 --- !u!483693784 &592314748
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -2029,7 +2037,7 @@ GameObject:
   - component: {fileID: 819918360}
   - component: {fileID: 819918359}
   m_Layer: 0
-  m_Name: Tilemap (5)
+  m_Name: Palmera5
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2047,7 +2055,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 837183385}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &819918359
 EdgeCollider2D:
@@ -2065,26 +2073,34 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 178.8192, y: 7.2443476}
-  - {x: 178.27591, y: 7.6169486}
-  - {x: 176.81145, y: 7.703168}
-  - {x: 176.0141, y: 7.5707555}
-  - {x: 175.43459, y: 7.109587}
-  - {x: 175.10637, y: 7.474961}
-  - {x: 174.03923, y: 7.6767926}
-  - {x: 172.77599, y: 7.5257177}
-  - {x: 172.04517, y: 6.994496}
-  - {x: 172.07895, y: 5.988237}
-  - {x: 170.76237, y: 6.187616}
-  - {x: 169.93463, y: 6.0295887}
-  - {x: 169.17976, y: 6.001312}
-  - {x: 167.9836, y: 5.956504}
-  - {x: 167.48657, y: 5.497428}
-  - {x: 167.06642, y: 5.959539}
-  - {x: 166.02994, y: 6.205683}
-  - {x: 164.37286, y: 5.946196}
-  - {x: 162.936, y: 5.8239985}
-  - {x: 162.55627, y: 5.3365574}
+  - {x: 150.49625, y: 5.539959}
+  - {x: 151.08221, y: 6.0393276}
+  - {x: 151.65341, y: 6.172348}
+  - {x: 153.19812, y: 6.1751547}
+  - {x: 153.73557, y: 6.028837}
+  - {x: 153.98318, y: 6.28644}
+  - {x: 154.52344, y: 6.4968424}
+  - {x: 156.09488, y: 6.2486734}
+  - {x: 156.40973, y: 5.9955807}
+  - {x: 156.72458, y: 5.5404344}
+  - {x: 157.19318, y: 6.074874}
+  - {x: 158.7891, y: 6.267577}
+  - {x: 159.6932, y: 6.141464}
+  - {x: 160.45499, y: 6.4903984}
+  - {x: 162.05713, y: 6.4231377}
+  - {x: 162.67883, y: 5.888528}
+  - {x: 162.5488, y: 6.4266872}
+  - {x: 162.4975, y: 7.0281706}
+  - {x: 162.74304, y: 7.4945326}
+  - {x: 163.22711, y: 8.136216}
+  - {x: 164.39203, y: 8.430027}
+  - {x: 166.36926, y: 8.235141}
+  - {x: 167.09628, y: 7.7820673}
+  - {x: 167.48666, y: 8.307098}
+  - {x: 168.73792, y: 8.469937}
+  - {x: 170.0928, y: 8.390341}
+  - {x: 170.89581, y: 8.006962}
+  - {x: 171.18561, y: 7.7472467}
 --- !u!483693784 &819918360
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -2194,14 +2210,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 837183384}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23.6, y: -3.7, z: 0}
+  m_LocalPosition: {x: -43.2, y: -1.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2099018910}
+  - {fileID: 1168399348}
+  - {fileID: 81501990}
   - {fileID: 1914314921}
   - {fileID: 1371119859}
-  - {fileID: 1234252219}
   - {fileID: 1480513365}
+  - {fileID: 1234252219}
   - {fileID: 819918358}
   - {fileID: 90174592}
   - {fileID: 289909960}
@@ -2211,6 +2228,7 @@ Transform:
   - {fileID: 311036546}
   - {fileID: 1301171134}
   - {fileID: 1998510343}
+  - {fileID: 2099018910}
   - {fileID: 592314746}
   - {fileID: 1845697683}
   - {fileID: 1182559573}
@@ -2218,7 +2236,7 @@ Transform:
   - {fileID: 1037935067}
   - {fileID: 930092680}
   m_Father: {fileID: 111881024}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &900751343
 GameObject:
@@ -2247,11 +2265,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 900751343}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 5, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 837183385}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &900751345
 EdgeCollider2D:
@@ -2269,11 +2287,11 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 225.43213, y: -21.773336}
+  - {x: 225.5485, y: -28.98719}
   - {x: 225.51437, y: -15.522203}
-  - {x: 225.51439, y: 2.9021857}
-  - {x: 223.90027, y: 2.8337002}
-  - {x: 223.89351, y: -35.803802}
+  - {x: 225.5144, y: 3.0185387}
+  - {x: 223.66754, y: 2.950052}
+  - {x: 223.54443, y: -38.247204}
 --- !u!483693784 &900751346
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -2386,11 +2404,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 930092679}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 23.9, y: -0.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 837183385}
-  m_RootOrder: 19
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &930092681
 EdgeCollider2D:
@@ -2409,12 +2427,13 @@ EdgeCollider2D:
   m_EdgeRadius: 0
   m_Points:
   - {x: 296.92813, y: 4.4470325}
-  - {x: 296.61215, y: 3.5662231}
+  - {x: 297.66232, y: 4.66729}
+  - {x: 296.83243, y: 3.1257086}
   - {x: 295.27438, y: 3.267734}
   - {x: 294.76257, y: 3.5712032}
-  - {x: 294.4973, y: 4.496714}
-  - {x: 296.94302, y: 4.6036224}
-  - {x: 294.44498, y: 4.5640244}
+  - {x: 294.5707, y: 4.86381}
+  - {x: 297.7507, y: 4.8238792}
+  - {x: 294.59183, y: 5.00454}
 --- !u!483693784 &930092682
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -24462,11 +24481,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1037935066}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 22.7, y: -0.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 837183385}
-  m_RootOrder: 18
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &1037935068
 EdgeCollider2D:
@@ -24484,14 +24503,15 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 291.99463, y: 2.652586}
-  - {x: 289.60135, y: 2.5729537}
-  - {x: 289.86478, y: 1.5938363}
-  - {x: 291.27664, y: 1.4405909}
-  - {x: 292.03638, y: 2.5713909}
-  - {x: 291.6784, y: 1.6790248}
-  - {x: 291.0203, y: 1.2627051}
-  - {x: 290.03928, y: 1.3816285}
+  - {x: 292.50854, y: 2.2854905}
+  - {x: 289.3811, y: 2.2058578}
+  - {x: 289.7179, y: 0.93306386}
+  - {x: 290.90955, y: 0.33930337}
+  - {x: 292.30328, y: 0.9863981}
+  - {x: 292.55035, y: 2.2777147}
+  - {x: 292.33917, y: 1.0916723}
+  - {x: 291.46082, y: 0.45509422}
+  - {x: 290.4798, y: 0.42717826}
 --- !u!483693784 &1037935069
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -24793,7 +24813,7 @@ GameObject:
   - component: {fileID: 1168399350}
   - component: {fileID: 1168399349}
   m_Layer: 0
-  m_Name: Tilemap (4)
+  m_Name: Pared
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24807,10 +24827,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1168399347}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.4, y: -0.4, z: 0}
+  m_LocalPosition: {x: 43.599995, y: 1.3999999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 111881024}
+  m_Father: {fileID: 837183385}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &1168399349
@@ -25374,11 +25394,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1182559572}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 20.1, y: -2.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 837183385}
-  m_RootOrder: 16
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &1182559574
 EdgeCollider2D:
@@ -25396,12 +25416,13 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 281.93774, y: -1.4951774}
-  - {x: 279.48172, y: -1.5280854}
-  - {x: 279.8632, y: -2.6040328}
-  - {x: 280.98056, y: -2.7401624}
-  - {x: 281.5395, y: -2.3957756}
-  - {x: 281.93506, y: -1.5367429}
+  - {x: 282.37827, y: -1.2015011}
+  - {x: 279.18808, y: -1.3078282}
+  - {x: 279.71634, y: -2.7508717}
+  - {x: 281.20084, y: -3.1072578}
+  - {x: 282.0319, y: -2.5144815}
+  - {x: 282.20023, y: -2.175517}
+  - {x: 282.37558, y: -1.3899043}
 --- !u!483693784 &1182559575
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -25514,11 +25535,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1191128464}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 21.4, y: -1.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 837183385}
-  m_RootOrder: 17
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &1191128466
 EdgeCollider2D:
@@ -25536,13 +25557,13 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 284.61865, y: 0.46156907}
+  - {x: 284.39835, y: 0.90208447}
   - {x: 284.7761, y: -0.26207924}
-  - {x: 285.14, y: -0.6271374}
-  - {x: 286.0562, y: -0.76744777}
-  - {x: 286.59686, y: -0.38898838}
-  - {x: 286.99103, y: 0.53947234}
-  - {x: 284.5792, y: 0.48798513}
+  - {x: 284.77292, y: -0.62713706}
+  - {x: 286.34988, y: -1.0611256}
+  - {x: 287.03738, y: -0.46240795}
+  - {x: 287.43155, y: 0.7597314}
+  - {x: 284.35898, y: 0.8550817}
 --- !u!483693784 &1191128467
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -25702,7 +25723,7 @@ GameObject:
   - component: {fileID: 1234252221}
   - component: {fileID: 1234252220}
   m_Layer: 0
-  m_Name: Tilemap (2)
+  m_Name: Palmera4
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25720,7 +25741,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 837183385}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &1234252220
 EdgeCollider2D:
@@ -25738,20 +25759,17 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 146.37056, y: 12.314266}
-  - {x: 145.82169, y: 12.690456}
-  - {x: 145.18965, y: 12.686954}
-  - {x: 144.70436, y: 12.635735}
-  - {x: 144.2466, y: 12.387967}
-  - {x: 143.81352, y: 12.509062}
-  - {x: 143.32765, y: 12.521038}
-  - {x: 142.36841, y: 12.412787}
-  - {x: 142.32547, y: 12.354699}
-  - {x: 142.1822, y: 12.297883}
-  - {x: 142.12428, y: 12.2968445}
-  - {x: 142.11009, y: 12.252078}
-  - {x: 141.8704, y: 12.173914}
-  - {x: 141.89227, y: 12.15205}
+  - {x: 130.27603, y: 13.797914}
+  - {x: 129.45811, y: 14.8788805}
+  - {x: 128.87196, y: 15.101918}
+  - {x: 128.01726, y: 15.074954}
+  - {x: 127.00641, y: 14.797409}
+  - {x: 126.11711, y: 14.901471}
+  - {x: 125.26959, y: 14.813747}
+  - {x: 124.65497, y: 14.548976}
+  - {x: 124.142395, y: 14.208071}
+  - {x: 124.07022, y: 13.3798685}
+  - {x: 124.24173, y: 13.364235}
 --- !u!483693784 &1234252221
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -25850,7 +25868,7 @@ GameObject:
   - component: {fileID: 1301171136}
   - component: {fileID: 1301171135}
   m_Layer: 0
-  m_Name: palmera
+  m_Name: palmera6
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25864,11 +25882,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1301171133}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 13.8, y: -1.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 837183385}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &1301171135
 EdgeCollider2D:
@@ -25886,11 +25904,11 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 258.30316, y: 0.27398992}
-  - {x: 257.71317, y: 0.79054606}
-  - {x: 256.63394, y: 0.8708999}
-  - {x: 255.87616, y: 0.81682193}
-  - {x: 255.19643, y: 0.14783001}
+  - {x: 258.65222, y: 0.2739898}
+  - {x: 257.94586, y: 1.0232526}
+  - {x: 257.2157, y: 1.3363096}
+  - {x: 255.64342, y: 1.2822305}
+  - {x: 254.26561, y: 0.14783013}
 --- !u!483693784 &1301171136
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -25989,7 +26007,7 @@ GameObject:
   - component: {fileID: 1371119861}
   - component: {fileID: 1371119860}
   m_Layer: 0
-  m_Name: Tilemap (1)
+  m_Name: Palmera2
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26007,7 +26025,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 837183385}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &1371119860
 EdgeCollider2D:
@@ -26025,11 +26043,12 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 129.90427, y: 6.3107195}
-  - {x: 130.52966, y: 6.916941}
-  - {x: 131.46129, y: 7.02242}
-  - {x: 132.40532, y: 6.814056}
-  - {x: 132.9591, y: 6.27471}
+  - {x: 109.03186, y: 6.6801414}
+  - {x: 109.42638, y: 7.101653}
+  - {x: 109.85005, y: 7.4380207}
+  - {x: 111.856155, y: 7.4605455}
+  - {x: 112.34337, y: 7.1184454}
+  - {x: 112.82556, y: 6.551778}
 --- !u!483693784 &1371119861
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -26128,7 +26147,7 @@ GameObject:
   - component: {fileID: 1480513367}
   - component: {fileID: 1480513366}
   m_Layer: 0
-  m_Name: Tilemap (3)
+  m_Name: Palmera3
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26164,11 +26183,12 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 124.60242, y: 4.3901277}
-  - {x: 125.25042, y: 5.225553}
-  - {x: 126.30357, y: 5.469246}
-  - {x: 127.245964, y: 5.357614}
-  - {x: 127.96769, y: 4.671473}
+  - {x: 118.54654, y: 7.990922}
+  - {x: 119.41081, y: 8.990019}
+  - {x: 121.39485, y: 8.934131}
+  - {x: 122.030014, y: 8.470028}
+  - {x: 122.66312, y: 7.567193}
+  - {x: 118.5565, y: 7.78125}
 --- !u!483693784 &1480513367
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -27102,7 +27122,7 @@ GameObject:
   - component: {fileID: 1600459731}
   - component: {fileID: 1600459730}
   m_Layer: 0
-  m_Name: Tilemap (8)
+  m_Name: piso
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27116,11 +27136,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1600459728}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 6.3, y: -10.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 837183385}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &1600459730
 EdgeCollider2D:
@@ -27138,8 +27158,8 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 225.18988, y: -24.417648}
-  - {x: 234.28279, y: -24.450441}
+  - {x: 224.60811, y: -24.417646}
+  - {x: 235.09724, y: -24.450441}
 --- !u!483693784 &1600459731
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -27299,11 +27319,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1776308767}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 7.6, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 837183385}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &1776308769
 EdgeCollider2D:
@@ -27323,9 +27343,10 @@ EdgeCollider2D:
   m_Points:
   - {x: 236.0118, y: -35.461704}
   - {x: 235.4246, y: -17.414772}
+  - {x: 235.57822, y: 2.745178}
   - {x: 235.46188, y: 2.9778843}
-  - {x: 233.86285, y: 2.984437}
-  - {x: 234.13109, y: -20.767624}
+  - {x: 233.63016, y: 2.9844368}
+  - {x: 233.89838, y: -27.865124}
 --- !u!483693784 &1776308770
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -27471,11 +27492,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1845697682}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 18.9, y: -3.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 837183385}
-  m_RootOrder: 15
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &1845697684
 EdgeCollider2D:
@@ -27493,12 +27514,12 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 276.9824, y: -3.5413277}
-  - {x: 274.6184, y: -3.5106735}
-  - {x: 274.79245, y: -4.5021086}
-  - {x: 275.63007, y: -4.80597}
-  - {x: 276.6282, y: -4.4118557}
-  - {x: 276.88483, y: -3.5848658}
+  - {x: 277.20267, y: -3.4679084}
+  - {x: 274.1779, y: -3.363834}
+  - {x: 274.35196, y: -4.6489463}
+  - {x: 275.63007, y: -5.1730657}
+  - {x: 276.84845, y: -4.85237}
+  - {x: 277.1785, y: -3.584866}
 --- !u!483693784 &1845697685
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -27597,7 +27618,7 @@ GameObject:
   - component: {fileID: 1914314923}
   - component: {fileID: 1914314922}
   m_Layer: 0
-  m_Name: Tilemap
+  m_Name: Palmera1
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27615,7 +27636,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 837183385}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &1914314922
 EdgeCollider2D:
@@ -27633,11 +27654,13 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 136.33513, y: 8.66722}
-  - {x: 135.6951, y: 9.375182}
-  - {x: 134.71684, y: 9.480888}
-  - {x: 133.93373, y: 9.404561}
-  - {x: 133.16573, y: 8.655209}
+  - {x: 106.52939, y: 3.9122212}
+  - {x: 105.588684, y: 5.17644}
+  - {x: 104.511444, y: 5.2301645}
+  - {x: 103.28746, y: 5.18979}
+  - {x: 102.72786, y: 4.8667593}
+  - {x: 102.38837, y: 4.301635}
+  - {x: 102.20024, y: 4.13216}
 --- !u!483693784 &1914314923
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -27895,7 +27918,7 @@ GameObject:
   - component: {fileID: 1998510345}
   - component: {fileID: 1998510344}
   m_Layer: 0
-  m_Name: Tilemap (7)
+  m_Name: PlataformaGrande3.2
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27909,11 +27932,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1998510342}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 10.1, y: -5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 837183385}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &1998510344
 EdgeCollider2D:
@@ -27931,16 +27954,19 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 260.8781, y: -16.326643}
-  - {x: 260.8319, y: -10.450836}
-  - {x: 261.9094, y: -8.038882}
-  - {x: 258.63275, y: -7.5308843}
-  - {x: 252.39746, y: -8.278782}
+  - {x: 265.29953, y: -19.351807}
+  - {x: 265.48602, y: -10.218131}
+  - {x: 266.5635, y: -7.457123}
+  - {x: 264.1631, y: -7.039036}
+  - {x: 261.9877, y: -7.220047}
+  - {x: 258.63275, y: -7.2981796}
+  - {x: 255.58408, y: -8.028635}
+  - {x: 252.63019, y: -8.395136}
   - {x: 250.7378, y: -8.564783}
   - {x: 249.22351, y: -9.093929}
   - {x: 247.71661, y: -9.386539}
-  - {x: 246.74266, y: -9.755462}
-  - {x: 247.94188, y: -15.889509}
+  - {x: 247.55713, y: -9.406405}
+  - {x: 249.3381, y: -20.543606}
 --- !u!483693784 &1998510345
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -28554,11 +28580,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2099018909}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 15.7, y: -4.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 837183385}
-  m_RootOrder: 0
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!483693784 &2099018911
 TilemapRenderer:
@@ -28662,15 +28688,15 @@ EdgeCollider2D:
   m_EdgeRadius: 0
   m_Points:
   - {x: 264.4709, y: -7.633476}
-  - {x: 266.94382, y: -7.535288}
-  - {x: 266.79617, y: -7.9376125}
-  - {x: 266.72128, y: -8.113546}
-  - {x: 266.62863, y: -8.523988}
-  - {x: 266.04153, y: -8.862398}
+  - {x: 267.64194, y: -7.5352874}
+  - {x: 267.45694, y: -7.937612}
+  - {x: 267.5289, y: -8.700899}
+  - {x: 266.33493, y: -9.184761}
+  - {x: 265.52762, y: -9.156075}
   - {x: 264.8927, y: -8.6413765}
   - {x: 264.48856, y: -7.635715}
   - {x: 267.0023, y: -7.5450187}
-  - {x: 267.04272, y: -7.6513853}
+  - {x: 267.11615, y: -7.798225}
 --- !u!1 &2145034059
 GameObject:
   m_ObjectHideFlags: 0
