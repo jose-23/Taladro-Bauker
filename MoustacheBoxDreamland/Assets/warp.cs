@@ -2,17 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class warp : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+public class warp : MonoBehaviour { 
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public GameObject target;
+
+    void OnTriggerEnter2D(Collider2D other) {
+        if (other.tag == "PlayerOne") {
+            print("Choque");
+            //other.transform.position = target.transform.GetChild(0).transform.position;
+        }
     }
+    
 }
