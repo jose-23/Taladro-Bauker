@@ -287,7 +287,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4540184}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 372.1, y: -65.4, z: 0}
+  m_LocalPosition: {x: 409.9, y: -75.3, z: 0}
   m_LocalScale: {x: 1.21558, y: 1.0339196, z: 1}
   m_Children:
   - {fileID: 750531264}
@@ -537,6 +537,15 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+  - first: {x: 331, y: -64, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 9
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
   - first: {x: 250, y: -47, z: 0}
     second:
       serializedVersion: 2
@@ -683,8 +692,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: c2c4e60cb1921aa4f993f5f12919c2d6, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: f08e017a966700045bda06f5e1956b84, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 5ad63f923fa13db4b9be3858e7bb0dcc, type: 2}
   - m_RefCount: 2
@@ -698,8 +707,8 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 3
     m_Data: {fileID: 21300000, guid: 5586328a22c77f347a4a529bc26ddd75, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: c513bdb0313e39040af92021d6743d2a, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 20eb6d080d7dc3542ac7a250e9e3fc99, type: 3}
   - m_RefCount: 2
@@ -723,7 +732,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 1834002a8bf66744280f0326ec478147, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 17
+  - m_RefCount: 18
     m_Data:
       e00: 1
       e01: 0
@@ -742,7 +751,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 17
+  - m_RefCount: 18
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
