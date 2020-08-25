@@ -24,5 +24,13 @@ public class enemyController : MonoBehaviour
             speed = -speed;
             rb2d.velocity = new Vector3(speed, rb2d.velocity.y, transform.position.z);
         }
+        if (speed < 0)
+        { //va hacia la izquierda
+            transform.localScale = new Vector3(-1f, 1f, 1f);
+        }
+        else if (speed > 0)
+        { //va hacia la derecha
+            transform.localScale = new Vector3(1f, 1f, 1f);
+        }
     }
 }
