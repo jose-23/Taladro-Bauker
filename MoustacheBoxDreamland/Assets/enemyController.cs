@@ -17,13 +17,16 @@ public class enemyController : MonoBehaviour
     void FixedUpdate()
     {
         rb2d.AddForce(Vector2.right * speed);
-        float limitEspeed = Mathf.Clamp(rb2d.velocity.x, -speed_max, speed_max);
-        rb2d.velocity = new Vector3(limitEspeed, rb2d.velocity.y);
+        float limitspeed = Mathf.Clamp(rb2d.velocity.x, -speed_max, speed_max);
+        rb2d.velocity = new Vector2(limitspeed, rb2d.velocity.y);
         Debug.Log(rb2d.velocity.x);
-        if (rb2d.velocity.x > 0.01f && rb2d.velocity.x < -0.01f) {
+        //hace que el enemigo cambie de dirección al chocar
+        if (rb2d.velocity.x > -0.01f && rb2d.velocity.x < 0.01f) {
             speed = -speed;
             rb2d.velocity = new Vector3(speed, rb2d.velocity.y, transform.position.z);
         }
+
+        //Cambio de imagen
         if (speed < 0)
         { //va hacia la izquierda
             transform.localScale = new Vector3(-1f, 1f, 1f);
