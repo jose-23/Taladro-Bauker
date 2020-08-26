@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Controller : MonoBehaviour
 {
     public float speed = 2f;
@@ -32,6 +32,10 @@ public class Controller : MonoBehaviour
         {
             jump = true;
         }//detectamos salto cuando está escalando
+
+
+        if (Input.GetKeyDown(KeyCode.O)) SceneManager.LoadScene(escenaActual());
+        if (Input.GetKeyDown(KeyCode.P)) SceneManager.LoadScene(escenaActual()+1);
 
     }
 
@@ -86,6 +90,11 @@ public class Controller : MonoBehaviour
 
         //CAMARA SE MUEVA
         Camera.main.transform.position = transform.position - new Vector3(0, 0, 20);
+
+    }
+
+    int escenaActual() {
+        return SceneManager.GetActiveScene().buildIndex; //devuelve la escena actual
 
     }
 }
