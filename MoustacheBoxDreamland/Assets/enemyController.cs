@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 public class enemyController : MonoBehaviour
@@ -19,7 +20,7 @@ public class enemyController : MonoBehaviour
         rb2d.AddForce(Vector2.right * speed);
         float limitspeed = Mathf.Clamp(rb2d.velocity.x, -speed_max, speed_max);
         rb2d.velocity = new Vector2(limitspeed, rb2d.velocity.y);
-        Debug.Log(rb2d.velocity.x);
+        //Debug.Log(rb2d.velocity.x);
         //hace que el enemigo cambie de dirección al chocar
         if (rb2d.velocity.x > -0.01f && rb2d.velocity.x < 0.01f) {
             speed = -speed;
@@ -34,6 +35,13 @@ public class enemyController : MonoBehaviour
         else if (speed > 0)
         { //va hacia la derecha
             transform.localScale = new Vector3(1f, 1f, 1f);
+        }
+    }
+
+    //colision con el protagonista
+    void OnTriggerEnter2D(Collider2D col) {
+        if (col.gameObject.tag == "player") {
+            Destroy(gameObject);
         }
     }
 }
