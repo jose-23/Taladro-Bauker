@@ -41,7 +41,12 @@ public class enemyController : MonoBehaviour
     //colision con el protagonista
     void OnTriggerEnter2D(Collider2D col) {
         if (col.gameObject.tag == "Player") {
-            Destroy(gameObject);
+            //valor de altura sobre el enemigo para aplastarlo
+            float yOffset = 1f;
+            if ((transform.position.y + yOffset) < col.transform.position.y) {
+                Destroy(gameObject);
+            }
+            
         }
     }
 }
