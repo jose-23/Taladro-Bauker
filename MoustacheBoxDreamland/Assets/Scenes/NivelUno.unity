@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 4540190}
   - component: {fileID: 4540189}
   - component: {fileID: 4540191}
+  - component: {fileID: 4540192}
   m_Layer: 8
   m_Name: PlayerOne
   m_TagString: Player
@@ -343,6 +344,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5222304986cac6429583308a01d3e54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &4540192
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4540184}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0209983, y: -0.016458958}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.07, y: 1.7}
+    newSize: {x: 1.07, y: 1.7}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.91601, y: 1.6341641}
+  m_EdgeRadius: 0
 --- !u!1 &38201919
 GameObject:
   m_ObjectHideFlags: 0
@@ -421,6 +448,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemy2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3026174654741229793, guid: e02c551106b29f64db570168fe13acc0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3026174654741229805, guid: e02c551106b29f64db570168fe13acc0,
         type: 3}
@@ -697,6 +729,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3026174654741229793, guid: e02c551106b29f64db570168fe13acc0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 3026174654741229805, guid: e02c551106b29f64db570168fe13acc0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -830,6 +867,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemy (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3026174654741229793, guid: e02c551106b29f64db570168fe13acc0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3026174654741229805, guid: e02c551106b29f64db570168fe13acc0,
         type: 3}
@@ -7392,6 +7434,11 @@ PrefabInstance:
     - target: {fileID: 3026174654741229793, guid: e02c551106b29f64db570168fe13acc0,
         type: 3}
       propertyPath: m_Name
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3026174654741229793, guid: e02c551106b29f64db570168fe13acc0,
+        type: 3}
+      propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3026174654741229805, guid: e02c551106b29f64db570168fe13acc0,
