@@ -127,7 +127,8 @@ public class Controller : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Enemy") { 
+        if (other.gameObject.tag == "Enemy") {
+            UpdateState("PlayerDie");
         }
     }
 
