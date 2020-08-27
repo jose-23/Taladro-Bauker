@@ -125,11 +125,12 @@ public class Controller : MonoBehaviour
         spr.color = Color.white;
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    //muerte personaje al colisionar con un enemigo.
+    /*void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Enemy") {
             UpdateState("PlayerDie");
         }
-    }
+    }*/
 
 }
