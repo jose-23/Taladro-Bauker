@@ -43,8 +43,13 @@ public class enemyController : MonoBehaviour
         if (col.gameObject.tag == "Player") {
             //valor de altura sobre el enemigo para aplastarlo
             float yOffset = 1f;
-            if ((transform.position.y + yOffset) < col.transform.position.y) {
+            if ((transform.position.y + yOffset) < col.transform.position.y)
+            {
+                col.SendMessage("EnemyJump");
                 Destroy(gameObject);
+            }
+            else {
+                col.SendMessage("EnemyKnockBack", transform.position.x);
             }
             
         }

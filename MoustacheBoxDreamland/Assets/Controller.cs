@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Controller : MonoBehaviour
@@ -12,12 +14,15 @@ public class Controller : MonoBehaviour
     public float jumpPower = 6.5f;
     private bool jump;
     public bool saltar_escalado;
+    private bool movement = true;
+    private SpriteRenderer spr;
 
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
+        spr= GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -48,6 +53,7 @@ public class Controller : MonoBehaviour
 
 
         float h = Input.GetAxis("Horizontal");
+        if (!movement) h = 0;
 
         /////////////////LIMITANDO VELOCIDAD//////////////////
         //si la velocidad se pasa del limite la pondremos en 1
@@ -97,4 +103,26 @@ public class Controller : MonoBehaviour
         return SceneManager.GetActiveScene().buildIndex; //devuelve la escena actual
 
     }
+    public void EnemyJump() {
+        jump = true;
+    }
+    public void EnemyKnockBack(float EnemyPosX) {
+        //salto si el enemigo te golpea
+        jump = true;
+        float side = Mathf.Sign(EnemyPosX - transform.position.x);
+        rb2d.AddForce(Vector2.left * side * jumpPower, ForceMode2D.Impulse);
+
+        //tiempo de salto sin poder moverse
+        movement = false;
+        Invoke("EnableMovement",0.7f);
+
+        Color color = new Color(250/255f,82/255f,11/255f);
+        spr.color = color;
+    }
+
+    void EnableMovement() {
+        movement = true;
+        spr.color = Color.white;
+    }
+
 }
