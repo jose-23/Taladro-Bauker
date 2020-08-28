@@ -9,6 +9,7 @@ public class spikeRock : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D col) {
         if (col.gameObject.tag == "Player") {
             //Debug.Log("Player Damaged");
+            //Destruye al personaje
             Destroy(col.gameObject);
         }
     }
