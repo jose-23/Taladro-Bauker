@@ -6,10 +6,10 @@ using UnityEngine;
 public class spikeRock : MonoBehaviour
 {
     //parte spike
-   /* private void OnCollisionEnter2D(Collision2D collision) {
-        if (collision.transform.CompareTag("Player")) {
-            Debug.Log("Player Damaged");
-            Destroy(collision.GameObject);
+    private void OnTriggerEnter2D(Collider2D col) {
+        if (col.gameObject.tag == "Player") {
+            //Debug.Log("Player Damaged");
+            Destroy(col.gameObject);
         }
-    }*/
+    }
 }

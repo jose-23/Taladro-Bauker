@@ -288,7 +288,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4540184}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 47.7, y: 2.4, z: 0}
+  m_LocalPosition: {x: 45.95, y: -0.49, z: 0}
   m_LocalScale: {x: 1.21558, y: 1.0339196, z: 1}
   m_Children:
   - {fileID: 750531264}
@@ -5887,6 +5887,7 @@ GameObject:
   - component: {fileID: 1315378611}
   - component: {fileID: 1315378614}
   - component: {fileID: 1315378613}
+  - component: {fileID: 1315378615}
   m_Layer: 0
   m_Name: SpikeRock
   m_TagString: Untagged
@@ -5952,7 +5953,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1315378610}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 52.58, y: 1.63, z: 0}
+  m_LocalPosition: {x: 52.63, y: 3.15, z: 0}
   m_LocalScale: {x: 1.1855539, y: 1.1391656, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5996,6 +5997,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.368464, y: 2.3425431}
   m_EdgeRadius: 0
+--- !u!95 &1315378615
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315378610}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 51b0680b8a7ae81448ae9f127b154bd0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1513574363
 GameObject:
   m_ObjectHideFlags: 0
