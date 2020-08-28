@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 4540191}
   m_Layer: 8
   m_Name: PlayerOne
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2913,7 +2913,7 @@ GameObject:
   - component: {fileID: 911895008}
   - component: {fileID: 911895007}
   - component: {fileID: 911895006}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Collected_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4972,7 +4972,9 @@ GameObject:
   - component: {fileID: 1597932369}
   - component: {fileID: 1597932368}
   - component: {fileID: 1597932370}
-  m_Layer: 0
+  - component: {fileID: 1597932372}
+  - component: {fileID: 1597932371}
+  m_Layer: 10
   m_Name: Bananas_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5038,7 +5040,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1597932367}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.67, y: -3.94, z: 0}
+  m_LocalPosition: {x: -1.71, y: -3.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 911895008}
@@ -5064,6 +5066,44 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1597932371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597932367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d0a73260d55ef04c8a01ee6115a9e9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1597932372
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597932367}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.007564485, y: 0.045386076}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.6, y: 1.6}
+    newSize: {x: 1.6, y: 1.6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.7074102, y: 0.6015091}
+  m_EdgeRadius: 0
 --- !u!1 &1600459728
 GameObject:
   m_ObjectHideFlags: 0
