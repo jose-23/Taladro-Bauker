@@ -130,6 +130,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 77710125}
+  - component: {fileID: 77710126}
   m_Layer: 0
   m_Name: Fruit
   m_TagString: Untagged
@@ -155,6 +156,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &77710126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77710124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb6dde77d9985a74db229648f07137d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  total: {fileID: 1979702768}
+  cantidad: {fileID: 939371792}
 --- !u!1 &81501989
 GameObject:
   m_ObjectHideFlags: 0
@@ -7409,7 +7424,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 12
+  m_Text: 0
 --- !u!222 &1979702769
 CanvasRenderer:
   m_ObjectHideFlags: 0

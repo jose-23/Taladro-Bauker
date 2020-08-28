@@ -8,6 +8,7 @@ public class fruitCollected : MonoBehaviour
         if (col.gameObject.tag == "Player") {
             GetComponent<SpriteRenderer>().enabled = false;
             gameObject.transform.GetChild(0).gameObject.SetActive(true); //activa la animación de la recolección 
+            FindObjectOfType<Fruit>().allFruitCollected();
             Destroy(gameObject, 0.4f);
 
         }
