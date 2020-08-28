@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class fruitCollected : MonoBehaviour
 {
-    //public GameObject obj;
     private void OnTriggerEnter2D(Collider2D col) {
         if (col.gameObject.tag == "Player") {
-            //obj.gameObject.SetActive(true);
-            //Destroy(gameObject);
             GetComponent<SpriteRenderer>().enabled = false;
+            gameObject.transform.GetChild(0).gameObject.SetActive(true); //activa la animación de la recolección 
+            Destroy(gameObject, 0.4f);
+
         }
     }
 }
