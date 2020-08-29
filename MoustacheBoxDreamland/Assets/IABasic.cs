@@ -29,6 +29,8 @@ public class IABasic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        StartCoroutine(CheckEnemyMoving());
+
         transform.position = Vector2.MoveTowards(transform.position, moveSpots[i].transform.position, speed * Time.deltaTime);
         if (Vector2.Distance(transform.position, moveSpots[i].transform.position) < 0.1f) {
             if (waitTime <= 0)
@@ -46,6 +48,17 @@ public class IABasic : MonoBehaviour
             else {
                 waitTime -= Time.deltaTime;
             }
+        }
+    }
+
+    IEnumerator CheckEnemyMoving() {
+        actualPos = transform.position;
+        yield return new WaitForSeconds(0.5f);
+        if (transform.position.x > actualPos.x) {
+            spriteRenderer.flipX = true;
+        }
+        else if (transform.position.x < actualPos.x) {
+            spriteRenderer.flipX = false;
         }
     }
 }
