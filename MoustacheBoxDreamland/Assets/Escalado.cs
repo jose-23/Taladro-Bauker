@@ -6,6 +6,7 @@ public class Escalado : MonoBehaviour
 {
     private Controller player;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,13 @@ public class Escalado : MonoBehaviour
         {
             player.saltar_escalado = true;
         }
+
+        if (col.gameObject.tag == "Transporte")
+        {
+            player.transform.position= new Vector2(119, -71);
+        }
+
+
     }
     void OnCollisionExit2D(Collision2D col)
     {

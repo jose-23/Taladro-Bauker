@@ -8,6 +8,7 @@ TagManager:
   - SaltarEscalado
   - platform
   - Enemy
+  - Transporte
   layers:
   - Default
   - TransparentFX

@@ -125,7 +125,6 @@ public class Controller : MonoBehaviour
         
 
         
-        
 
 
 
@@ -167,4 +166,9 @@ public class Controller : MonoBehaviour
     void OnBecameInvisible() {
         deadf=true;;
     }
+
+
+
+
+
 }
