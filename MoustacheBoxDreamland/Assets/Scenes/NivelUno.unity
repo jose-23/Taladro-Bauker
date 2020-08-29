@@ -17521,6 +17521,7 @@ GameObject:
   - component: {fileID: 1286063446}
   - component: {fileID: 1286063450}
   - component: {fileID: 1286063449}
+  - component: {fileID: 1286063451}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Untagged
@@ -17627,7 +17628,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1286063446}
   spriteRenderer: {fileID: 1286063447}
-  speed: 0.5
+  speed: 3
   moveSpots:
   - {fileID: 823718819}
   - {fileID: 142589511}
@@ -17658,6 +17659,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3247452, y: 0.13035393}
   m_EdgeRadius: 0
+--- !u!114 &1286063451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286063445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f96edf9ac5d5caa40a1f81dd2ee72e80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collider2D: {fileID: 1286063450}
+  animator: {fileID: 1286063446}
+  spriterenderer: {fileID: 1286063447}
+  destroyParticle: {fileID: 0}
+  jumpForce: 2.5
+  lifes: 2
 --- !u!1 &1315378610
 GameObject:
   m_ObjectHideFlags: 0
