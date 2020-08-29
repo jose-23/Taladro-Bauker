@@ -16,7 +16,8 @@ public class Controller : MonoBehaviour
     public bool saltar_escalado;
     private bool movement = true;
     private SpriteRenderer spr;
-
+    public bool dead;
+    private bool deadf;
     // Start is called before the first frame update
     void Start()
     {
@@ -49,7 +50,7 @@ public class Controller : MonoBehaviour
         anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x)); //mathf.abs saca el valor absoluto. Estamos asignando la velocidad
         anim.SetBool("Grounded", grounded);
 
-
+        anim.SetBool("Dead", deadf);
 
 
         float h = Input.GetAxis("Horizontal");
@@ -108,9 +109,24 @@ public class Controller : MonoBehaviour
     }
     public void EnemyKnockBack(float EnemyPosX) {
         //salto si el enemigo te golpea
-        jump = true;
-        float side = Mathf.Sign(EnemyPosX - transform.position.x);
-        rb2d.AddForce(Vector2.left * side * jumpPower, ForceMode2D.Impulse);
+        //choca con cualquier parte del cuerpo menos los pies
+
+        if (dead) //choca con los pies
+        {
+            jump = true;
+            float side = Mathf.Sign(EnemyPosX - transform.position.x);
+            rb2d.AddForce(Vector2.left * side * jumpPower, ForceMode2D.Impulse);
+
+        }
+        else {
+            deadf = true;
+        }
+        
+
+        
+        
+
+
 
         //tiempo de salto sin poder moverse
         movement = false;
@@ -129,7 +145,7 @@ public class Controller : MonoBehaviour
     /*void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Enemy") {
-            UpdateState("PlayerDie");
+            UpdateState("Dead");
         }
     }*/
 

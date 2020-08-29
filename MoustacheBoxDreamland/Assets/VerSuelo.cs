@@ -25,6 +25,11 @@ public class VerSuelo : MonoBehaviour
             player.transform.parent = col.transform; //se cambia las coordenadas junto con la plataforma, se usa col pq hace referencia al objeto
             player.grounded = true;
         }
+
+        if (col.gameObject.tag == "Enemy") {
+            player.dead = true;
+
+        }
     }
     void OnCollisionExit2D(Collision2D col)
     {
