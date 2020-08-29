@@ -97,7 +97,7 @@ public class Controller : MonoBehaviour
 
 
         //CAMARA SE MUEVA
-        Camera.main.transform.position = transform.position - new Vector3(0, 0, 20);
+        //Camera.main.transform.position = transform.position - new Vector3(0, 0, 20);
 
     }
 
