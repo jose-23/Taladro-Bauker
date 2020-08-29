@@ -52,7 +52,6 @@ public class Controller : MonoBehaviour
 
         anim.SetBool("Dead", deadf);
 
-
         float h = Input.GetAxis("Horizontal");
         if (!movement) h = 0;
 
@@ -134,12 +133,24 @@ public class Controller : MonoBehaviour
 
         Color color = new Color(250/255f,82/255f,11/255f);
         spr.color = color;
+
     }
 
     void EnableMovement() {
         movement = true;
         spr.color = Color.white;
     }
+
+
+
+    void Muerte() {
+        Invoke("EnableMovement", 10f);
+        SceneManager.LoadScene(escenaActual());
+
+        
+    }
+
+
 
     //muerte personaje al colisionar con un enemigo.
     /*void OnTriggerEnter2D(Collider2D other)
