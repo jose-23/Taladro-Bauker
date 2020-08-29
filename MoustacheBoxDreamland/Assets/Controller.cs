@@ -18,6 +18,9 @@ public class Controller : MonoBehaviour
     private SpriteRenderer spr;
     public bool dead;
     private bool deadf;
+    public bool teletransporte;
+    public bool cargar_partida;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +46,10 @@ public class Controller : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.O)) SceneManager.LoadScene(escenaActual());
         if (Input.GetKeyDown(KeyCode.P)) SceneManager.LoadScene(escenaActual()+1);
 
+
+
+        if (Input.GetKeyDown(KeyCode.K)) guardarPartida();
+        if (Input.GetKeyDown(KeyCode.L)) cargarPartida();
     }
 
     private void FixedUpdate()
@@ -98,7 +105,7 @@ public class Controller : MonoBehaviour
 
         //CAMARA SE MUEVA
         //Camera.main.transform.position = transform.position - new Vector3(0, 0, 20);
-
+        cargar_partida = false;
     }
 
     int escenaActual() {
@@ -164,11 +171,22 @@ public class Controller : MonoBehaviour
 
     //El PERSONAJE DESAPARECE DE LA CAMARA
     void OnBecameInvisible() {
-        deadf=true;;
+        if (!cargar_partida) {
+            deadf = true;
+        }
+        
     }
 
 
 
+    void guardarPartida() {
+        infoPartida.infoPlayer.posicion = transform.position;
 
+    }
+
+    void cargarPartida() {
+        cargar_partida = true;
+        transform.position=infoPartida.infoPlayer.posicion;
+    }
 
 }
