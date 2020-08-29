@@ -161,4 +161,10 @@ public class Controller : MonoBehaviour
         }
     }*/
 
+
+
+    //El PERSONAJE DESAPARECE DE LA CAMARA
+    void OnBecameInvisible() {
+        SceneManager.LoadScene(escenaActual());
+    }
 }
