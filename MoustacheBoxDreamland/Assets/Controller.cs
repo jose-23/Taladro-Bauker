@@ -27,6 +27,8 @@ public class Controller : MonoBehaviour
         anim = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
         spr= GetComponent<SpriteRenderer>();
+
+        if (infoPartida.PartidaGuardada) cargarPartida();
     }
 
     // Update is called once per frame
@@ -181,7 +183,7 @@ public class Controller : MonoBehaviour
 
     void guardarPartida() {
         infoPartida.infoPlayer.posicion = transform.position;
-
+        infoPartida.PartidaGuardada = true;
     }
 
     void cargarPartida() {
