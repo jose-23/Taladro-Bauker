@@ -941,7 +941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0cf0ade57bf1ee4fb16833693e661df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  follow: {fileID: 0}
+  follow: {fileID: 1419050760}
   minPos: {x: -0.57, y: -61}
   maxPos: {x: 303.6, y: -10.7}
 --- !u!20 &519420031

@@ -2089,7 +2089,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0cf0ade57bf1ee4fb16833693e661df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  follow: {fileID: 0}
+  follow: {fileID: 767931834}
   minPos: {x: 0.52, y: -18.48}
   maxPos: {x: 151.24, y: 27.06}
 --- !u!20 &519420031
