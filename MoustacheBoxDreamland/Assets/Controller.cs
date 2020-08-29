@@ -29,12 +29,12 @@ public class Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && grounded)
+        if (Input.GetKeyDown(KeyCode.Space) && grounded && !deadf)
         {
             jump = true;
         }//detectamos salto
 
-        if (Input.GetKeyDown(KeyCode.Space) && saltar_escalado)
+        if (Input.GetKeyDown(KeyCode.Space) && saltar_escalado && !deadf)
         {
             jump = true;
         }//detectamos salto cuando está escalando
@@ -57,18 +57,20 @@ public class Controller : MonoBehaviour
 
         /////////////////LIMITANDO VELOCIDAD//////////////////
         //si la velocidad se pasa del limite la pondremos en 1
-        if (rb2d.velocity.x > speed_max)
+        if (rb2d.velocity.x > speed_max && !deadf)
         {
             rb2d.velocity = new Vector3(1, rb2d.velocity.y, transform.position.z);
         }
         //si la velocidad se pasa del limite la pondremos en 1
-        if (rb2d.velocity.x < -speed_max)
+        if (rb2d.velocity.x < -speed_max && !deadf)
         {
             rb2d.velocity = new Vector3(-1, rb2d.velocity.y, transform.position.z);
         }
         /////////////////LIMITANDO VELOCIDAD//////////////////
-
-        rb2d.velocity = new Vector3(h * speed, rb2d.velocity.y, transform.position.z);
+        if (!deadf) {
+            rb2d.velocity = new Vector3(h * speed, rb2d.velocity.y, transform.position.z);
+        }
+        
 
         Debug.Log(rb2d.velocity.x); //muestra la velocidad por consola
 
@@ -76,11 +78,11 @@ public class Controller : MonoBehaviour
 
 
         ////////PERSONAJE SE GIRE////////////////////////
-        if (h < 0)
+        if (h < 0 && !deadf)
         { //va hacia la izquierda
             transform.localScale = new Vector3(-1f, 1f, 1f);
         }
-        if (h > 0)
+        if (h > 0 && !deadf)
         { //va hacia la derecha
             transform.localScale = new Vector3(1f, 1f, 1f);
         }
@@ -144,7 +146,6 @@ public class Controller : MonoBehaviour
 
 
     void Muerte() {
-        Invoke("EnableMovement", 10f);
         SceneManager.LoadScene(escenaActual());
 
         
