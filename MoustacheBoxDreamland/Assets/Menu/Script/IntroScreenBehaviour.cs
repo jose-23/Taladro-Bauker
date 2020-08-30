@@ -20,6 +20,7 @@ public class IntroScreenBehaviour : MonoBehaviour
             //pasar a la pantalla de opciones
             optionsMenu.SetActive(true);
             gameObject.SetActive(false);
+            AudioManager.instance.PlaySong(AudioManager.instance.menuMusic);
         }
         
     }
