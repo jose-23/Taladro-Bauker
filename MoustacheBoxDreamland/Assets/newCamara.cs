@@ -16,7 +16,6 @@ public class newCamara : MonoBehaviour
     void Update()
     {
         bool fase=infoPartida.infoPlayer.faseDos;
-        print(fase);
 
         float posx = follow.transform.position.x;
         float posy = follow.transform.position.y;
