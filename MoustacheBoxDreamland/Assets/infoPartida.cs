@@ -10,5 +10,7 @@ public static class infoPartida
         public static Vector2 posicion;
         public static int vidas;
         public static int escena_actual;
+        public static bool faseDos;
+        public static bool faseDoss;
     }
 }

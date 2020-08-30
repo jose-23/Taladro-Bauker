@@ -23,8 +23,9 @@ public class Escalado : MonoBehaviour
 
         if (col.gameObject.tag == "Transporte")
         {
-            player.transform.position= new Vector2(119, -71);
+            player.transform.position= new Vector2(120, -71);
             player.teletransporte = true;
+            infoPartida.infoPlayer.faseDoss = true;
         }
 
 
