@@ -23,6 +23,7 @@ public class AudioManager : MonoBehaviour
     {
         effectSource.volume = PlayerPrefs.GetFloat("sfxVolumen", 1.0f);
         musicSource.volume = PlayerPrefs.GetFloat("musicVolumen", 1.0f);
+
         sliderMusic.value = musicSource.volume;
         sliderSFX.value = effectSource.volume;
 
@@ -47,14 +48,14 @@ public class AudioManager : MonoBehaviour
     public void OnMusicVolumeUpdate()
     {
         musicSource.volume = sliderMusic.value;
-        PlayerPrefs.SetFloat("musicVolumen", musicSource);
+        PlayerPrefs.SetFloat("musicVolumen", musicSource.volume);
         PlayerPrefs.Save();
 
     }
     public void OnSFXVolumeUpdate()
     {
         effectSource.volume = sliderSFX.value;
-        PlayerPrefs.SetFloat("sfxVolumen", effectSource);
+        PlayerPrefs.SetFloat("sfxVolumen", effectSource.volume);
         PlayerPrefs.Save();
 
 
