@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class PlantEnemy : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private float waitedTime; //tiempo entre balas
+    public float waitTimeToAttack = 3; //tiempo de cada bala
+    public Animator animator;
+    public GameObject bulletPrefab;
+    public Transform lauchSpawnPoint; //posicion de lanzamiento
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
