@@ -19535,6 +19535,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 2282848272425373489, guid: 7e45e75e9c8d00140b844bf907f9f7f0,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.029001236
+      objectReference: {fileID: 0}
+    - target: {fileID: 2282848272425373489, guid: 7e45e75e9c8d00140b844bf907f9f7f0,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.0287209
+      objectReference: {fileID: 0}
     - target: {fileID: 2282848272425373490, guid: 7e45e75e9c8d00140b844bf907f9f7f0,
         type: 3}
       propertyPath: speed
@@ -19549,6 +19559,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 2282848273198715237, guid: 7e45e75e9c8d00140b844bf907f9f7f0,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.048128128
+      objectReference: {fileID: 0}
+    - target: {fileID: 2282848273198715237, guid: 7e45e75e9c8d00140b844bf907f9f7f0,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.1737404
       objectReference: {fileID: 0}
     - target: {fileID: 2282848273198715239, guid: 7e45e75e9c8d00140b844bf907f9f7f0,
         type: 3}
