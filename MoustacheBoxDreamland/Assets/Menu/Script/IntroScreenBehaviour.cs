@@ -26,9 +26,5 @@ public class IntroScreenBehaviour : MonoBehaviour
         }
         
     }
-    public void EscenaJuego()
-    {
-        SceneManager.LoadScene("NivelUno");
-
-    }
+    
 }
