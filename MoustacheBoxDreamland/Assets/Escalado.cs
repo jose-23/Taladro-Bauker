@@ -28,6 +28,11 @@ public class Escalado : MonoBehaviour
             infoPartida.infoPlayer.faseDoss = true;
         }
 
+        if (col.gameObject.tag == "EnemyDef") {
+            player.CollisionEnemyDef = true;
+
+
+        }
 
     }
     void OnCollisionExit2D(Collision2D col)

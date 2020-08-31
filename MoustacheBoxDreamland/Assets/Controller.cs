@@ -21,6 +21,8 @@ public class Controller : MonoBehaviour
     public bool teletransporte;
     public bool cargar_partida;
     int cont_muerte = 0;
+    public bool CollisionEnemy;
+    public bool CollisionEnemyDef;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,10 +54,13 @@ public class Controller : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.K)) guardarPartida();
         if (Input.GetKeyDown(KeyCode.L)) cargarPartida();
+        
+        
     }
 
     private void FixedUpdate()
     {
+
         anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x)); //mathf.abs saca el valor absoluto. Estamos asignando la velocidad
         anim.SetBool("Grounded", grounded);
 
@@ -79,7 +84,7 @@ public class Controller : MonoBehaviour
         if (!deadf) {
             rb2d.velocity = new Vector3(h * speed, rb2d.velocity.y, transform.position.z);
         }
-        
+
 
         Debug.Log(rb2d.velocity.x); //muestra la velocidad por consola
 
@@ -111,6 +116,9 @@ public class Controller : MonoBehaviour
 
         infoPartida.infoPlayer.faseDos = teletransporte;
 
+        MuerteDef();
+        MuerteDefDos();
+        
     }
 
     int escenaActual() {
@@ -120,20 +128,36 @@ public class Controller : MonoBehaviour
     public void EnemyJump() {
         jump = true;
     }
+
+    public void MuerteDef() {
+        if (CollisionEnemy) {
+            deadf = true;
+        }
+    }
+
+    public void MuerteDefDos()
+    {
+        if (CollisionEnemyDef)
+        {
+            deadf = true;
+        }
+    }
+
+
     public void EnemyKnockBack(float EnemyPosX) {
         //salto si el enemigo te golpea
         //choca con cualquier parte del cuerpo menos los pies
 
         if (dead) //choca con los pies
-        {
+            {
             jump = true;
             float side = Mathf.Sign(EnemyPosX - transform.position.x);
             rb2d.AddForce(Vector2.left * side * jumpPower, ForceMode2D.Impulse);
 
         }
-        else {
+        /*else {
             deadf = true;
-        }
+        }*/
         
 
         
@@ -158,7 +182,7 @@ public class Controller : MonoBehaviour
 
     void Muerte() {
 
-        
+        Destroy(gameObject);
 
         SceneManager.LoadScene(escenaActual());
 

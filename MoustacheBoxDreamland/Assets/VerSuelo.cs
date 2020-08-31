@@ -20,16 +20,21 @@ public class VerSuelo : MonoBehaviour
             player.grounded = true;
         }
 
+        if (col.gameObject.tag == "GroundDan")
+        {
+            player.grounded = true;
+            player.CollisionEnemyDef = true;
+        }
+
         if (col.gameObject.tag == "platform")
         {
             player.transform.parent = col.transform; //se cambia las coordenadas junto con la plataforma, se usa col pq hace referencia al objeto
             player.grounded = true;
         }
 
-        if (col.gameObject.tag == "Enemy") {
+        /*if (col.gameObject.tag == "Enemy") {
             player.dead = true;
-
-        }
+        }*/
     }
     void OnCollisionExit2D(Collision2D col)
     {
@@ -37,6 +42,8 @@ public class VerSuelo : MonoBehaviour
         {
             player.grounded = false;
         }
+
+
 
         if (col.gameObject.tag == "platform")
         {

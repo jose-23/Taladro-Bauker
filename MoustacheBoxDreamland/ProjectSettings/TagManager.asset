@@ -9,6 +9,10 @@ TagManager:
   - platform
   - Enemy
   - Transporte
+  - EnemyDef
+  - Pies
+  - ParteCuerpo
+  - GroundDan
   layers:
   - Default
   - TransparentFX
