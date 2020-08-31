@@ -155,9 +155,9 @@ public class Controller : MonoBehaviour
             rb2d.AddForce(Vector2.left * side * jumpPower, ForceMode2D.Impulse);
 
         }
-        /*else {
+        else {
             deadf = true;
-        }*/
+        }
         
 
         

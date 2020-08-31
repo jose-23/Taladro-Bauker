@@ -3958,12 +3958,12 @@ PrefabInstance:
     - target: {fileID: 4076427870073992245, guid: d2bbd9c0d1a905f45b9d7668ede659ff,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 129.5
+      value: 129.57
       objectReference: {fileID: 0}
     - target: {fileID: 4076427870073992245, guid: d2bbd9c0d1a905f45b9d7668ede659ff,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -32.4
+      value: -31.96
       objectReference: {fileID: 0}
     - target: {fileID: 4076427870073992245, guid: d2bbd9c0d1a905f45b9d7668ede659ff,
         type: 3}
@@ -4351,6 +4351,8 @@ MonoBehaviour:
   dead: 0
   teletransporte: 0
   cargar_partida: 0
+  CollisionEnemy: 0
+  CollisionEnemyDef: 0
 --- !u!95 &767931838
 Animator:
   serializedVersion: 3
@@ -4514,7 +4516,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 767931834}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 129.4, y: 10.8, z: 0}
+  m_LocalPosition: {x: 133.82, y: -32.23, z: 0}
   m_LocalScale: {x: 1.21558, y: 1.0339196, z: 1}
   m_Children:
   - {fileID: 2107596025}
@@ -4990,6 +4992,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1059215357260951945, guid: ad369fe98cfb0bb4ea7485e1f78dd396,
+        type: 3}
+      propertyPath: m_TagString
+      value: EnemyDef
+      objectReference: {fileID: 0}
     - target: {fileID: 1059215357347653097, guid: ad369fe98cfb0bb4ea7485e1f78dd396,
         type: 3}
       propertyPath: lifes
@@ -5000,7 +5007,13 @@ PrefabInstance:
       propertyPath: waitTimeToAttack
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1059215357520799470, guid: ad369fe98cfb0bb4ea7485e1f78dd396,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1059215357260951947, guid: ad369fe98cfb0bb4ea7485e1f78dd396, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ad369fe98cfb0bb4ea7485e1f78dd396, type: 3}
 --- !u!1 &860292456
 GameObject:
@@ -5632,6 +5645,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7125646742874776056, guid: 374031dfadad68d4295236b281d58bbc,
+        type: 3}
+      propertyPath: m_TagString
+      value: EnemyDef
+      objectReference: {fileID: 0}
     - target: {fileID: 7125646742930291488, guid: 374031dfadad68d4295236b281d58bbc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5692,6 +5710,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatPrincipal
       objectReference: {fileID: 0}
+    - target: {fileID: 7125646742930291495, guid: 374031dfadad68d4295236b281d58bbc,
+        type: 3}
+      propertyPath: m_TagString
+      value: EnemyDef
+      objectReference: {fileID: 0}
     - target: {fileID: 7125646743469520601, guid: 374031dfadad68d4295236b281d58bbc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5726,6 +5749,11 @@ PrefabInstance:
         type: 3}
       propertyPath: speed
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7125646744002571165, guid: 374031dfadad68d4295236b281d58bbc,
+        type: 3}
+      propertyPath: m_TagString
+      value: EnemyDef
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 374031dfadad68d4295236b281d58bbc, type: 3}
