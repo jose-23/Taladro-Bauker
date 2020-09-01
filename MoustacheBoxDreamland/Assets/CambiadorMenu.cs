@@ -22,4 +22,9 @@ public class CambiadorMenu : MonoBehaviour
         SceneManager.LoadScene("NivelUno");
 
     }
+    public void Salir()
+    {
+
+        Application.Quit();
+    }
 }
