@@ -1,9 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
+
 
 public class Trampoline : MonoBehaviour
 {
+    public AudioSource clip;
+
     public Animator animator;
     public float jumpForce = 2f;
 
@@ -13,6 +17,7 @@ public class Trampoline : MonoBehaviour
         if (collision.transform.CompareTag("Player")) {
             collision.gameObject.GetComponent<Rigidbody2D>().velocity = (Vector2.up * jumpForce);
             animator.Play("JumpTrampoline");
+            clip.Play();
         }
     }
 }
