@@ -5,8 +5,12 @@ using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Audio;
+
 public class Controller : MonoBehaviour
 {
+    public AudioSource clip;
+
     public float speed = 2f;
     public float speed_max = 5f;
     private Animator anim;
@@ -182,6 +186,8 @@ public class Controller : MonoBehaviour
         if (CollisionEnemyDef)
         {
             deadf = true;
+            clip.Play();
+
         }
     }
 
@@ -195,14 +201,18 @@ public class Controller : MonoBehaviour
             jump = true;
             float side = Mathf.Sign(EnemyPosX - transform.position.x);
             rb2d.AddForce(Vector2.left * side * jumpPower, ForceMode2D.Impulse);
+            clip.Play();
+
 
         }
         else {
             deadf = true;
-        }
-        
+            clip.Play();
 
-        
+        }
+
+
+
 
 
 
@@ -229,6 +239,8 @@ public class Controller : MonoBehaviour
         //SceneManager.LoadScene(escenaActual());
         //cargarPartida();
         SceneManager.LoadScene(escenaActual());
+        clip.Play();
+
 
     }
 
