@@ -26,6 +26,7 @@ public class Controller : MonoBehaviour
     public bool CollisionEnemyDef;
     public int vidasPlayer=5;
     public Text VidasRestantes;
+    public int cont_guardado = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -57,8 +58,10 @@ public class Controller : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.K)) guardarPartida();
         if (Input.GetKeyDown(KeyCode.L)) cargarPartida();
-        
-        
+
+        if (cont_guardado == 0) guardarPartida();
+        if (cont_guardado == 0) cont_guardado+=1;
+
     }
 
     private void FixedUpdate()
@@ -188,10 +191,11 @@ public class Controller : MonoBehaviour
     void Muerte() {
 
         infoPartida.infoPlayer.vidas = vidasPlayer-1;
-        Destroy(gameObject);
+        //Destroy(gameObject);
+        //SceneManager.LoadScene(escenaActual());
+        cargarPartida();
         SceneManager.LoadScene(escenaActual());
 
-        
     }
 
 
