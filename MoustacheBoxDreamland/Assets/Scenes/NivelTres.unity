@@ -4067,7 +4067,7 @@ PrefabInstance:
     - target: {fileID: 3924977317350726161, guid: 19e52322379a388469a8ba8b5a5a6daf,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3924977317703449568, guid: 19e52322379a388469a8ba8b5a5a6daf,
         type: 3}
@@ -29534,6 +29534,8 @@ MonoBehaviour:
   vidasPlayer: 5
   VidasRestantes: {fileID: 1949087254}
   cont_guardado: 0
+  sgteLvl: 0
+  contLvl: 0
 --- !u!95 &1419050764
 Animator:
   serializedVersion: 3
@@ -29697,7 +29699,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1419050760}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.7, y: -15.7, z: 0}
+  m_LocalPosition: {x: -9, y: -17, z: 0}
   m_LocalScale: {x: 1.21558, y: 1.0339196, z: 1}
   m_Children:
   - {fileID: 1639289899}

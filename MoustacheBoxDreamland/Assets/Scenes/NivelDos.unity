@@ -3966,7 +3966,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 130, y: -30, z: -10}
+  m_LocalPosition: {x: 93, y: 10.3, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 580198413}
@@ -5830,6 +5830,8 @@ MonoBehaviour:
   vidasPlayer: 5
   VidasRestantes: {fileID: 2059397330}
   cont_guardado: 0
+  sgteLvl: 0
+  contLvl: 0
 --- !u!95 &767931838
 Animator:
   serializedVersion: 3
@@ -5993,7 +5995,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 767931834}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 129.8, y: -29.8, z: 0}
+  m_LocalPosition: {x: -7, y: -3, z: 0}
   m_LocalScale: {x: 1.21558, y: 1.0339196, z: 1}
   m_Children:
   - {fileID: 2107596025}

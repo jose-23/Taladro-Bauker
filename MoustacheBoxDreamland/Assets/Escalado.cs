@@ -34,6 +34,11 @@ public class Escalado : MonoBehaviour
 
         }
 
+        if (col.gameObject.tag == "Meta")
+        {
+            player.sgteLvl = true;
+        }
+
     }
     void OnCollisionExit2D(Collision2D col)
     {

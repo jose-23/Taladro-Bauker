@@ -27,6 +27,8 @@ public class Controller : MonoBehaviour
     public int vidasPlayer=5;
     public Text VidasRestantes;
     public int cont_guardado = 0;
+    public bool sgteLvl;
+    public int contLvl=0;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,7 +54,19 @@ public class Controller : MonoBehaviour
 
 
         if (Input.GetKeyDown(KeyCode.O)) SceneManager.LoadScene(escenaActual());
-        if (Input.GetKeyDown(KeyCode.P)) SceneManager.LoadScene(escenaActual()+1);
+        if (Input.GetKeyDown(KeyCode.P)) {
+            contLvl += 1;
+            if (contLvl == 1)
+            { //lvl2
+                infoPartida.infoPlayer.posicion = new Vector2(-7, -3);
+            }
+            if (contLvl == 2)
+            { //lvl3
+                infoPartida.infoPlayer.posicion = new Vector2(-9, -17);
+            }
+            SceneManager.LoadScene(escenaActual() + 1);
+        }
+        
 
 
 
@@ -125,7 +139,27 @@ public class Controller : MonoBehaviour
         MuerteDef();
         MuerteDefDos();
         VidasRestantes.text = vidasPlayer.ToString();
+        SgteLvl();
         
+    }
+
+
+    public void SgteLvl() {
+        if (sgteLvl)
+        {
+            sgteLvl = false;
+            contLvl += 1;
+            if (contLvl == 1) { //lvl2
+                infoPartida.infoPlayer.posicion = new Vector2(-7, -3);
+            }
+            if (contLvl == 2)
+            { //lvl3
+                infoPartida.infoPlayer.posicion = new Vector2(-9, -17);
+            }
+
+
+            SceneManager.LoadScene(escenaActual() + 1);
+        }
     }
 
     int escenaActual() {
@@ -193,7 +227,7 @@ public class Controller : MonoBehaviour
         infoPartida.infoPlayer.vidas = vidasPlayer-1;
         //Destroy(gameObject);
         //SceneManager.LoadScene(escenaActual());
-        cargarPartida();
+        //cargarPartida();
         SceneManager.LoadScene(escenaActual());
 
     }
