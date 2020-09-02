@@ -11,7 +11,6 @@ public class UiManager : MonoBehaviour
     {
         Time.timeScale = 0;
         optionsPanel.SetActive(true);
-        print("hola");
 
     }
 
@@ -30,6 +29,8 @@ public class UiManager : MonoBehaviour
     }
     public void GoMainMenu()
     {
+        Time.timeScale = 1;
+
         SceneManager.LoadScene("Menu");
     }
     public void QuitGame()
