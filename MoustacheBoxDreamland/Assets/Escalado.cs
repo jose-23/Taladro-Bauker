@@ -44,6 +44,11 @@ public class Escalado : MonoBehaviour
             player.sgteLvl = true;
         }
 
+        if (col.gameObject.tag == "GroundDan")
+        {
+            player.CollisionEnemyDef = true;
+        }
+
     }
     void OnCollisionExit2D(Collision2D col)
     {

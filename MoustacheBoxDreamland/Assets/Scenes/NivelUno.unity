@@ -287,7 +287,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4540184}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 144.6, y: 28.7, z: 0}
+  m_LocalPosition: {x: 77.1, y: 6.4, z: 0}
   m_LocalScale: {x: 1.21558, y: 1.0339196, z: 1}
   m_Children:
   - {fileID: 750531264}
@@ -322,6 +322,7 @@ MonoBehaviour:
   VidasRestantes: {fileID: 2131932853}
   cont_guardado: 0
   sgteLvl: 0
+  contLvl: 0
 --- !u!95 &4540190
 Animator:
   serializedVersion: 3
@@ -2345,6 +2346,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: spike (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3147400298808391358, guid: 9e89abee6123f874d99f032ba4654ea6,
+        type: 3}
+      propertyPath: m_TagString
+      value: GroundDan
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e89abee6123f874d99f032ba4654ea6, type: 3}
@@ -23921,6 +23927,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: spike (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3147400298808391358, guid: 9e89abee6123f874d99f032ba4654ea6,
+        type: 3}
+      propertyPath: m_TagString
+      value: GroundDan
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e89abee6123f874d99f032ba4654ea6, type: 3}
