@@ -14,6 +14,7 @@ TagManager:
   - ParteCuerpo
   - GroundDan
   - Meta
+  - TransporteDef
   layers:
   - Default
   - TransparentFX
