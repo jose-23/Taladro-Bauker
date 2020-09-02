@@ -28,6 +28,11 @@ public class Escalado : MonoBehaviour
             infoPartida.infoPlayer.faseDoss = true;
         }
 
+        if (col.gameObject.tag == "Transporte2")
+        {
+            player.transform.position = new Vector2(158, -26);
+        }
+
         if (col.gameObject.tag == "EnemyDef") {
             player.CollisionEnemyDef = true;
 

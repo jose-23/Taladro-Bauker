@@ -13,6 +13,7 @@ TagManager:
   - Pies
   - ParteCuerpo
   - GroundDan
+  - Transporte2
   layers:
   - Default
   - TransparentFX
