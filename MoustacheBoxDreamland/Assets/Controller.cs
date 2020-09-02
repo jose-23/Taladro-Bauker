@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public class Controller : MonoBehaviour
 {
     public float speed = 2f;
@@ -23,6 +24,8 @@ public class Controller : MonoBehaviour
     int cont_muerte = 0;
     public bool CollisionEnemy;
     public bool CollisionEnemyDef;
+    public int vidasPlayer=5;
+    public Text VidasRestantes;
     // Start is called before the first frame update
     void Start()
     {
@@ -118,10 +121,12 @@ public class Controller : MonoBehaviour
 
         MuerteDef();
         MuerteDefDos();
+        VidasRestantes.text = vidasPlayer.ToString();
         
     }
 
     int escenaActual() {
+
         return SceneManager.GetActiveScene().buildIndex; //devuelve la escena actual
 
     }
@@ -182,8 +187,8 @@ public class Controller : MonoBehaviour
 
     void Muerte() {
 
+        infoPartida.infoPlayer.vidas = vidasPlayer-1;
         Destroy(gameObject);
-
         SceneManager.LoadScene(escenaActual());
 
         
@@ -224,12 +229,14 @@ public class Controller : MonoBehaviour
     void guardarPartida() {
         infoPartida.infoPlayer.posicion = transform.position;
         infoPartida.PartidaGuardada = true;
+        infoPartida.infoPlayer.vidas = vidasPlayer;
     }
 
     void cargarPartida() {
         cargar_partida = true;
         transform.position=infoPartida.infoPlayer.posicion;
         teletransporte = infoPartida.infoPlayer.faseDos;
+        vidasPlayer=infoPartida.infoPlayer.vidas;
     }
 
 }
