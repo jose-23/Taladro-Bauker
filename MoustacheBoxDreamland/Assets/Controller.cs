@@ -39,7 +39,7 @@ public class Controller : MonoBehaviour
         anim = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
         spr= GetComponent<SpriteRenderer>();
-
+        infoPartida.realizar = false;
         if (infoPartida.PartidaGuardada) cargarPartida();
     }
 
@@ -144,7 +144,13 @@ public class Controller : MonoBehaviour
         MuerteDefDos();
         VidasRestantes.text = vidasPlayer.ToString();
         SgteLvl();
-        
+
+        if (infoPartida.realizar) {
+            deadf = true;
+            infoPartida.realizar = false;
+        }
+
+
     }
 
 
