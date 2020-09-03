@@ -19,9 +19,18 @@ public class CambiadorMenu : MonoBehaviour
     }
     public void EscenaJuego()
     {
+        infoPartida.multi = false;
         SceneManager.LoadScene("NivelUno");
 
     }
+
+    public void MultiJugadorInicia()
+    {
+        infoPartida.multi = true;
+        SceneManager.LoadScene("NivelUno");
+
+    }
+
     public void Salir()
     {
 

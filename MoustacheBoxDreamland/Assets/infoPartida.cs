@@ -5,6 +5,7 @@ using UnityEngine;
 public static class infoPartida
 {
     public static bool PartidaGuardada = false;
+    public static bool multi;
 
     public static class infoPlayer {
         public static Vector2 posicion;
@@ -12,5 +13,6 @@ public static class infoPartida
         public static int escena_actual;
         public static bool faseDos;
         public static bool faseDoss;
+        
     }
 }
