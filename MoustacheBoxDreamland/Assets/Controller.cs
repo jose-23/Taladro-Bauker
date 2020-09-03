@@ -57,7 +57,7 @@ public class Controller : MonoBehaviour
         }//detectamos salto cuando está escalando
 
 
-        if (Input.GetKeyDown(KeyCode.O)) SceneManager.LoadScene(escenaActual());
+        /*if (Input.GetKeyDown(KeyCode.O)) SceneManager.LoadScene(escenaActual());
         if (Input.GetKeyDown(KeyCode.P)) {
             contLvl += 1;
             if (contLvl == 1)
@@ -69,12 +69,12 @@ public class Controller : MonoBehaviour
                 infoPartida.infoPlayer.posicion = new Vector2(-9, -17);
             }
             SceneManager.LoadScene(escenaActual() + 1);
-        }
+        }*/
         
 
 
 
-        if (Input.GetKeyDown(KeyCode.K)) guardarPartida();
+        //if (Input.GetKeyDown(KeyCode.K)) guardarPartida();
         if (Input.GetKeyDown(KeyCode.L)) cargarPartida();
 
         if (cont_guardado == 0) guardarPartida();
@@ -110,7 +110,7 @@ public class Controller : MonoBehaviour
         }
 
 
-        Debug.Log(rb2d.velocity.x); //muestra la velocidad por consola
+        //Debug.Log(rb2d.velocity.x); //muestra la velocidad por consola
 
 
 
@@ -150,9 +150,16 @@ public class Controller : MonoBehaviour
             infoPartida.realizar = false;
         }
 
+        if (infoPartida.infoPlayer.vidas == 0) {
+            GameOver();
+        }
+
 
     }
 
+    public void GameOver() {
+        print("carga creditos pls");
+    }
 
     public void SgteLvl() {
         if (sgteLvl)
