@@ -40,6 +40,7 @@ public class Controller : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         spr= GetComponent<SpriteRenderer>();
         infoPartida.realizar = false;
+        infoPartida.infoPlayer.vidas = vidasPlayer;
         if (infoPartida.PartidaGuardada) cargarPartida();
     }
 
