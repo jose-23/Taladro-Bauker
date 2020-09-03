@@ -4383,7 +4383,9 @@ MonoBehaviour:
   animator: {fileID: 0}
   spriteRenderer: {fileID: 0}
   speed: 10
-  moveSpots: []
+  moveSpots:
+  - {fileID: 1080828340}
+  - {fileID: 1019740890}
   startWaitTime: 0.5
 --- !u!61 &728815819
 BoxCollider2D:
@@ -31998,7 +32000,7 @@ GameObject:
   - component: {fileID: 1349010303}
   m_Layer: 0
   m_Name: RinoPrincipal
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
