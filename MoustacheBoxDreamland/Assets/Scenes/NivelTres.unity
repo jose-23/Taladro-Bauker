@@ -4380,8 +4380,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d367fef1fff964f9aa67232d3032c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  spriteRenderer: {fileID: 0}
+  animator: {fileID: 728815820}
+  spriteRenderer: {fileID: 728815821}
   speed: 10
   moveSpots:
   - {fileID: 1080828340}
@@ -4498,9 +4498,9 @@ MonoBehaviour:
   collider2D: {fileID: 728815819}
   animator: {fileID: 728815820}
   spriterenderer: {fileID: 728815821}
-  destroyParticle: {fileID: 0}
+  destroyParticle: {fileID: 26259580}
   jumpForce: 10
-  lifes: 5
+  lifes: 3
 --- !u!1 &759221637
 GameObject:
   m_ObjectHideFlags: 0
