@@ -163,7 +163,7 @@ public class Controller : MonoBehaviour
     }
 
     public void GameOver() {
-        print("carga creditos pls");
+        SceneManager.LoadScene("GameOver");
     }
 
     public void SgteLvl() {
