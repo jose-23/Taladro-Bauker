@@ -33,6 +33,7 @@ public class Controller : MonoBehaviour
     public int cont_guardado = 0;
     public bool sgteLvl;
     public int contLvl=0;
+    public int contadorgame = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +41,11 @@ public class Controller : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         spr= GetComponent<SpriteRenderer>();
         infoPartida.realizar = false;
-        infoPartida.infoPlayer.vidas = vidasPlayer;
+        if (contadorgame == 0) {
+            infoPartida.infoPlayer.vidas = vidasPlayer;
+            contadorgame += 1;
+        }
+        
         if (infoPartida.PartidaGuardada) cargarPartida();
     }
 
