@@ -308,6 +308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28066373a751b5e4a968a3be9b6b3caa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clip: {fileID: 0}
   speed: 10
   speed_max: 10
   grounded: 0
