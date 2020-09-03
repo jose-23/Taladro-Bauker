@@ -276,7 +276,7 @@ public class Controller : MonoBehaviour
 
 
 
-    void guardarPartida() {
+    public void guardarPartida() {
         infoPartida.infoPlayer.posicion = transform.position;
         infoPartida.PartidaGuardada = true;
         infoPartida.infoPlayer.vidas = vidasPlayer;

@@ -32,6 +32,11 @@ public class VerSuelo : MonoBehaviour
             player.grounded = true;
         }
 
+        if (col.gameObject.tag == "ArregloBug")
+        {
+            player.grounded = true;
+            player.guardarPartida();
+        }
         /*if (col.gameObject.tag == "Enemy") {
             player.dead = true;
         }*/

@@ -15,6 +15,7 @@ TagManager:
   - GroundDan
   - Meta
   - TransporteDef
+  - ArregloBug
   layers:
   - Default
   - TransparentFX
