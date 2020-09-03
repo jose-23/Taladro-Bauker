@@ -192,7 +192,7 @@ public class Controller : MonoBehaviour
         if (CollisionEnemyDef)
         {
             deadf = true;
-            clip.Play();
+          
 
         }
     }
@@ -207,13 +207,13 @@ public class Controller : MonoBehaviour
             jump = true;
             float side = Mathf.Sign(EnemyPosX - transform.position.x);
             rb2d.AddForce(Vector2.left * side * jumpPower, ForceMode2D.Impulse);
-            clip.Play();
+            
 
 
         }
         else {
             deadf = true;
-            clip.Play();
+            
 
         }
 
